@@ -35,7 +35,7 @@ background:#1b1b1b;border:1px solid #2f2f2f;
 border-left:4px solid #d6b36a;padding:25px;margin-top:15px;
 }
 .footer{text-align:center;padding:30px;background:#0d0d0d;color:#666;}
-</style>
+#toTop{position:fixed;right:28px;bottom:28px;width:56px;height:56px;display:none;align-items:center;justify-content:center;background:rgba(18,18,18,.92);border:2px solid #d6b36a;border-radius:50%;color:#d6b36a;font-size:28px;cursor:pointer;box-shadow:0 0 12px rgba(214,179,106,.35);transition:.25s;z-index:9999;}#toTop:hover{background:#d6b36a;color:#111;box-shadow:0 0 20px rgba(214,179,106,.8);transform:translateY(-3px) scale(1.06);}</style>
 </head>
 <body>
 
@@ -578,5 +578,5 @@ border-left:4px solid #d6b36a;padding:25px;margin-top:15px;
 © 2026 Another Zone | S.T.A.L.K.E.R. RP
 </div>
 
-</body>
+<button id="toTop" aria-label="Наверх">▲</button><script>const topBtn=document.getElementById('toTop');window.addEventListener('scroll',()=>{topBtn.style.display=window.scrollY>350?'flex':'none';});topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});</script></body>
 </html>
